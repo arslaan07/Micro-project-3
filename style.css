@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #3B4664;
+}
+.calculator {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #3B4664;
+    width: 30vw;
+    color: white;
+}
+h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.display {
+    background-color: #181F32;
+    padding-right: 30px;
+    height: 15vh;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    font-size: 2.6rem; 
+    line-height: 1.5rem;
+    text-align: right; 
+    align-content: center;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 8px;
+    margin-bottom: 25px;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 15px;
+    background-color: #252D44;
+    padding: 30px 20px;
+    border-radius: 12px;
+}
+
+button {
+    background: #EAE3DB;
+    border: none;
+    padding: 15px 0;
+    border-radius: 12px;
+    color: #3B4664;
+    font-size: 1.7rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+}
+
+button:hover {
+    background-color: #acb0c9;
+}
+
+.del, .reset {
+    background-color: #647299;
+    color: #FFFFFF;
+}
+
+.equal, .reset{
+    grid-column: span 2; 
+}
+.equal {
+    background-color: #D13F30;
+    color: #FFFFFF;
+}
+@media (max-width: 768px) {
+    .calculator {
+        width: 80vw;
+    }
+
+    .display {
+        font-size: 2rem;
+        padding-right: 20px;
+        height: 12vh;
+        letter-spacing: 4px; 
+    }
+
+    .keys {
+        padding: 20px 15px; 
+    }
+
+    button {
+        font-size: 1.5rem; 
+        padding: 12px 0; 
+    }
+}
